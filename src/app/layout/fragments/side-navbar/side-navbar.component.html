@@ -1,0 +1,27 @@
+<mat-nav-list class="side-navnar">
+    <mat-expansion-panel [class.mat-elevation-z0]="true">
+        <mat-expansion-panel-header>
+            <strong style="font-size: 17.5px;">Applications</strong>
+        </mat-expansion-panel-header>
+        <ng-container *ngFor="let menu of applicationMenu ; index as i;">
+        
+            <mat-list-item (click)="getData(menu,'applications')"  >
+                
+                {{menu}}
+            </mat-list-item>
+        </ng-container>
+    </mat-expansion-panel>
+    <mat-expansion-panel [class.mat-elevation-z0]="true">
+        <mat-expansion-panel-header>
+            <strong style="font-size: 17.5px;">Resources</strong>
+        </mat-expansion-panel-header>
+        <ng-container *ngFor="let menu of resourceMenu ; index as i;">
+        
+            <mat-list-item (click)="getData(menu,'resources')"  >
+               
+                {{menu}}
+            </mat-list-item>
+        </ng-container>
+    </mat-expansion-panel>
+    
+</mat-nav-list> 

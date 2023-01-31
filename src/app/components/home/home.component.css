@@ -1,0 +1,42 @@
+
+.example-card {
+    max-width: 400px;
+    /* opacity: 0.4; */
+    background-color: transparent;
+
+    display: inline-block;
+    margin: 30px;
+
+    border : medium dashed red;
+    /* display: inline; */
+  }
+  
+  .example-header-image {
+    background-image: url('https://media.istockphoto.com/id/1059572120/vector/speedometer-icon-or-sign-with-arrow-infographic-gauge-element-black-tachometer-isolated-on.jpg?b=1&s=170667a&w=0&k=20&c=HSFJHBClhc86RuiV6uErmzokj8zUr7HXVmzu0Cv4rJA=');
+    background-size: cover;
+  }
+
+  .maxdata {
+    color: red;
+  }
+
+  .leastData{
+    color: green;
+  }
+
+#low{
+    border : medium dashed green;
+
+
+}
+  .ag-theme-balham {
+    --ag-foreground-color: rgb(9, 0, 32);
+    --ag-background-color: rgb(249, 245, 227);
+    --ag-header-foreground-color: rgb(255, 255, 255);
+    --ag-header-background-color: rgb(28, 105, 247);
+    --ag-odd-row-background-color: rgb(0, 0, 0, 0.03);
+    /* --ag-header-column-resize-handle-color: rgb(0, 0, 0); */
+
+    --ag-font-size: 17px;
+    /* --ag-font-family: monospace; */
+}
