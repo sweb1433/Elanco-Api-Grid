@@ -1,14 +1,14 @@
 <mat-card class="example-card" *ngIf="data.length>0">
   <mat-card-header>
     <div mat-card-avatar class="example-header-image"></div>
-    <mat-card-title>Max Cost is: <span class="maxdata">{{highestCost.Cost}}</span></mat-card-title>
+    <mat-card-title>Max Cost is: <span class="maxdata">{{maxCost}}</span></mat-card-title>
     <mat-card-title>Service Name: <span class="maxdata">{{highestCost.ServiceName}}</span></mat-card-title>
   </mat-card-header>
   <br>
   <mat-card-content>
     <p>
       The max consumption cost of service {{highestCost.ServiceName}} of resource Group {{highestCost.ResourceGroup}}
-      from {{highestCost.Location}} is {{highestCost.Cost}} on {{highestCost.Date}}.
+      from {{highestCost.Location}} is {{maxCost}} on {{highestCost.Date}}.
     </p>
   </mat-card-content>
   <mat-card-actions>
@@ -20,16 +20,16 @@
   <mat-card-header>
     <div mat-card-avatar class="example-header-image"></div>
     <mat-card-title>Max Consumption: <span
-        class="leastData">{{highestConsumedQuantity.ConsumedQuantity}}</span></mat-card-title>
+        class="leastData">{{maxCon}}</span></mat-card-title>
     <mat-card-title>Service Name: <span
         class="leastData">{{highestConsumedQuantity.ServiceName}}</span></mat-card-title>
   </mat-card-header>
   <br>
   <mat-card-content>
     <p>
-      The Highest consumption quentity of service {{highestConsumedQuantity.ServiceName}} of resource Group
+      The Highest consumption quantity of service {{highestConsumedQuantity.ServiceName}} of resource Group
       {{highestConsumedQuantity.ResourceGroup}} from {{highestConsumedQuantity.Location}} is
-      {{highestConsumedQuantity.ConsumedQuantity}} on {{highestConsumedQuantity.Date}}.
+      {{maxCon}} on {{highestConsumedQuantity.Date}}.
     </p>
   </mat-card-content>
   <mat-card-actions>
