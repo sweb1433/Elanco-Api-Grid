@@ -16,11 +16,11 @@ export class SideNavbarComponent implements OnInit {
   ngOnInit() {
     this.httpService.getApplications('applications').subscribe((data: any)=>{
       this.applicationMenu = data;
-      console.log(data)
+      // console.log(data)
     })
     this.httpService.getApplications('resources').subscribe((data: any)=>{
       this.resourceMenu = data;
-      console.log(data)
+      // console.log(data)
     })
   }
 
@@ -32,8 +32,8 @@ export class SideNavbarComponent implements OnInit {
     }
     this.httpService.getDetails(name,param).subscribe((data: any)=>{
 
-      this.httpService.raiseDataEmitterEvent(data)
-      this.httpService.raiseTitleDataEvent(title)
+      this.httpService.passDetailDataToHome(data)
+      this.httpService.passTitleDataToHeader(title)
     })
   }
 

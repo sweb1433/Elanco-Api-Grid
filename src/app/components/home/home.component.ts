@@ -68,10 +68,8 @@ export class HomeComponent implements OnInit {
 
   ngOnInit(): void {
     this.data = []
-    this.dataService.dataEmitter.subscribe((data)=>{
+    this.dataService.detailsData.subscribe((data)=>{
       this.data = data;
-      this.maxCostFun(this.data)
-      this.maxConsumptionFun(this.data)
       this.maxCon = Math.max(...this.data.map((o:any) => o.ConsumedQuantity))
       this.maxCost = Math.max(...this.data.map((o:any) => o.Cost))
 
@@ -80,6 +78,14 @@ export class HomeComponent implements OnInit {
       // this.highestCost = data.sort((a: any,b: any) =>{a.cost-b.cost})[0]
       // this.highestConsumedQuantity = data.sort((a: any,b: any) =>{a.ConsumedQuantity-b.ConsumedQuantity})[0]
 
+
+
+
+
+
+      
+      this.maxCostFun(this.data)
+      this.maxConsumptionFun(this.data)
     })
   }
 

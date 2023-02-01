@@ -15,6 +15,12 @@ import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 import { FormsModule } from '@angular/forms';
 import { MatInputModule } from '@angular/material/input';
 import { MatIconModule } from '@angular/material/icon';
+// import { ModuleRegistry } from '@ag-grid-community/core';
+// import { RowGroupingModule } from '@ag-grid-enterprise/row-grouping';
+
+
+// import { ModuleRegistry } from 'ag-grid-community';
+// import {RowGrouping}
 
 
 
@@ -32,7 +38,7 @@ import { MatIconModule } from '@angular/material/icon';
     DataTablesModule,
     AgGridModule,
     MatCardModule,
-    MatProgressSpinnerModule,FormsModule,MatInputModule,MatIconModule
+    MatProgressSpinnerModule,FormsModule,MatInputModule,MatIconModule, 
   
   ],
   providers: [],
